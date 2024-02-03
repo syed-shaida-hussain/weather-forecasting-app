@@ -1,5 +1,5 @@
 :root {
-    --primary-color:#9333ea;
+    --primary-color:#a855f7;
     --bg-color :#e5e5e5;
     --input-bg-color : #fafafa;
 }
@@ -21,6 +21,8 @@ body {
 }
 
 .header{
+    border-radius: 5px;
+    padding: 0.5rem;
     background-color: var(--input-bg-color);
 }
 
@@ -29,7 +31,7 @@ body {
     outline: none;
     border: none;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
 }
 
 .header .search-bar{
@@ -55,14 +57,26 @@ body {
 }
 
 .card{
-    width: 300px;
-    padding: 2rem 0rem;
+    padding: 2rem;
     margin: 1rem auto;
     background-color:  var(--primary-color);
     color: var(--bg-color);
     border-radius: 10px;
     font-weight: 550;
 }
+
+.toggle-btn{
+    padding: 0.5rem 1rem;
+    background: none;
+    background-color: var(--primary-color);
+    color: var(--input-bg-color); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+/* utility classes */
 
 .heading-1{
     font-size: 20px;
@@ -71,6 +85,18 @@ body {
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
+}
+
+.w-300{
+    width: 300px;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-full{
+    width: fit-content;
 }
 
 .m-1{
@@ -85,8 +111,20 @@ body {
     display: flex;
 }
 
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+
 .flex-col{
     flex-direction: column;
+}
+
+.flex-center-col{
+    justify-content: center;
 }
 
 .flex-center{
@@ -107,4 +145,59 @@ body {
 
 .gap-15{
     gap: 15px;
+}
+
+.gap-50{
+    gap: 50px;
+}
+
+.error-text{
+    color: red;    
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.hr{
+    display: none;
+}
+
+@media only screen and (max-width : 600px) {
+    .w-80{
+        width: 100%;
+        margin: 0rem 0.5rem ;
+    }
+
+    .extended-weather-card{
+        flex-direction: column;
+    }
+
+    .gap-20 {
+        gap: 20px;
+    }
+
+    .hr{
+        width: 100%;
+        display: inline-block;
+        background-color: var(--input-bg-color);
+    }
+
+    .card{
+        line-height: 1.5rem;
+    }
+
+    .w-full{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .w-full{
+        width: 100%;
+    }
+
+    .App {
+        max-width: 90vw;
+    }
 }
