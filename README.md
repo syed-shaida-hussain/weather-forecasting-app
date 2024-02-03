@@ -1,8 +1,27 @@
-# React + Vite
+# Thorain , weather forecasting app.
+## Overview
+This project delivers a robust weather forecasting web app, built with React JS and powered by the OpenWeatherMap API. Designed for ease of use and scalability, it's deployed on Vercel for seamless accessibility.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Accessing the App
+Live version: Visit the app directly at https://thorain.vercel.app/
 
-Currently, two official plugins are available:
+## Usage 
+1. Search for a location:
+Enter a city name in the search bar and press the enter key in case of both laptops and mobile phones.
+On mobile phones, the "Enter" key is typically represented by a symbol that looks like a bent arrow or a horizontal line with an arrow pointing to the left or right.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. View weather information:
+After pressing the enter key, the app will display the current weather conditions and forecast for next five days for the selected location.
+
+3. Toggle between celsius and fahrenheit values: 
+There is a button that serves as a temperature unit toggler. The user can toggle between celsius and fahrenheit values by clicking on the button present right next to the search bar. The default value for this button is celsius.
+
+## Features
+- Current weather information display
+- Temperature, humidity, and wind speed details
+- 5-day weather forecast
+- The app is fully responsive. The responsiveness of the app is achieved by using media queries.
+- Temperature unit toggling option
+
+## Contributing
+Feel free to contribute to this project by opening issues or creating pull requests. Any contributions are welcome!
