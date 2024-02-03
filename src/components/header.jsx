@@ -27,7 +27,6 @@ const fetchWeather = async () => {
     } catch(e){
       setErrors({...errors , isError : true  , error : e.response.data})
       setLoading(false)
-      console.log(e)
     }
   }
 
