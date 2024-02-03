@@ -1,9 +1,39 @@
 # Thorain , weather forecasting app.
 ## Overview
-This project delivers a robust weather forecasting web app, built with React JS and powered by the OpenWeatherMap API. Designed for ease of use and scalability, it's deployed on Vercel for seamless accessibility.
+This project delivers a robust weather forecasting web app, built with React+Vite and powered by the OpenWeatherMap API. Designed for ease of use and scalability, it's deployed on Vercel for seamless accessibility.
 
 ## Accessing the App
 Live version: Visit the app directly at https://thorain.vercel.app/
+
+## Running the app locally
+Follow these steps to run the app locally:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/syed-shaida-hussain/weather-forecasting-app
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd weather-forecasting-app
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Use your open weather API_KEY in both API url's in the header.js component
+
+5. Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+6. Open your browser and visit `http://localhost:5173` to view the app.
+
+## Configuration
+- OpenWeather API: Obtain your API key by signing up at [OpenWeatherMap](https://openweathermap.org/) and replace `your-api-key` in the API URL in header.js file.
 
 ## Usage 
 1. Search for a location:
