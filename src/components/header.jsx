@@ -10,10 +10,10 @@ const { setCurrentWeather , setErrors, errors, setLoading, searchQuery, setSearc
 
 const fetchWeather = async () => {
     try{
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchQuery}&units=${unit}&appid=b9360aeee730297ae7fa5fb867ae40dd`);
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchQuery}&units=${unit}&appid=${process.env.API_KEY}`);
       //units=Metric for celsius values and imperial for fahrenheit
 
-      const response2 = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${response?.data?.coord?.lat}&lon=${response?.data?.coord?.lon}&units=${unit}&appid=b9360aeee730297ae7fa5fb867ae40dd`);
+      const response2 = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${response?.data?.coord?.lat}&lon=${response?.data?.coord?.lon}&units=${unit}&appid=${process.env.API_KEY}`);
 
 
       if(response.status === 200) {
