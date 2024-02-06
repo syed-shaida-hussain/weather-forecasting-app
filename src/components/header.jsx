@@ -42,6 +42,16 @@ const keyDownHandler = (e) => {
     }
 }
 
+const searchHandler = () => {
+    setLoading(true)
+    fetchWeather();
+
+    if(searchQuery.length <= 1 ) {
+        setCurrentWeather(null)
+        setErrors({...errors , isError : false  , error : {}})
+    }
+}
+
 const toggleUnit = () => {
     setUnit(unit === "metric" ? "imperial" : "metric");
 }
@@ -60,6 +70,7 @@ useEffect(() => {
     <div className='flex flex-center search-bar'>
       <span className="material-symbols-outlined">search</span>
       <input type='text' placeholder='Enter city name here...' className='input' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onKeyDown={keyDownHandler} />
+      <button className="toggle-btn" onClick={() => searchHandler()}>Search</button>
     </div>
     </div>
     <div className="flex flex-center gap-15 heading-1">

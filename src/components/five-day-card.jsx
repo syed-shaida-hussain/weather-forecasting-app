@@ -27,7 +27,7 @@ export const FiveDayWeatherCard = () => {
       filteredForecast?.map((item , index) => <section key={index} className='flex flex-center extended-weather-card gap-50 gap-20 text-center'>
       <div className="flex-3 lh-md">{new Date(item?.dt_txt).toLocaleDateString('en-US', options)}</div> 
       <div className="flex-1">{item?.main?.feels_like}&deg;</div>
-      <img src = {`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`} alt='weather condition icon' width={50} height={50} className='text-center m-auto' />
+      <img src = {`https://openweathermap.org/img/wn/${item?.weather[0]?.icon}@2x.png`} alt='weather condition icon' width={90} height={90} className='text-center m-auto' />
       <div className="flex-1">{item?.weather[0]?.description}</div>
       <hr className="hr" />
       {/* Here, i am using the icons provided by the openweather API */}
