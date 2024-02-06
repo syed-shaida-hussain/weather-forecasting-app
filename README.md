@@ -37,7 +37,7 @@ Follow these steps to run the app locally:
 
 ## Usage 
 1. Search for a location:
-Enter a city name in the search bar and press the enter key in case of both laptops and mobile phones.
+Enter a city name in the search bar and press the enter key or search button in case of both laptops and mobile phones.
 On mobile phones, the "Enter" key is typically represented by a symbol that looks like a bent arrow or a horizontal line with an arrow pointing to the left or right.
 
 2. View weather information:
